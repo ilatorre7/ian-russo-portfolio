@@ -6,6 +6,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import About from "../components/About.astro";
 import Card from "../components/Card.astro";
 import { ViewTransitions } from "astro:transitions";
+
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -19,37 +21,37 @@ import { ViewTransitions } from "astro:transitions";
     <About />
     <main class="grid grid-cols-3 gap-4 px-40">
       <Card
-        route="/jsKOqd19wBk/"
+        route={`${currentPath}jsKOqd19wBk`}
         img="https://i.ytimg.com/vi/jsKOqd19wBk/maxresdefault.jpg"
         name="Intro documental sobre deportes electrónicos"
         description="Trabajo realizado para un proyecto propio"
       />
       <Card
-        route="/_8QEvMwx6xI/"
+        route={`${currentPath}_8QEvMwx6xI`}
         img="https://i.ytimg.com/vi/_8QEvMwx6xI/maxresdefault.jpg"
         name="Yo Gamer"
         description="Serie documental de mi tesis universitaria donde desempeñé los roles de producción, dirección y edición."
       />
       <Card
-        route="/yPB3TKSeM7k/"
+        route={`${currentPath}yPB3TKSeM7k`}
         img="https://i.ytimg.com/vi_webp/yPB3TKSeM7k/maxresdefault.webp"
         name="Outro documental sobre deportes electrónicos"
         description="Trabajo realizado para un proyecto propio"
       />
       <Card
-        route="/Bl86bFRDK-s/"
+        route={`${currentPath}Bl86bFRDK-s`}
         img="https://i.ytimg.com/vi/Bl86bFRDK-s/maxresdefault.jpg"
         name="HuracanGaming"
         description="Trabajo para las redes de @Huracan_Gaming (MEX). Contenido en sus diferentes formatos para plataformas de redes sociales , incluyendo Instagram, Facebook, TikTok, entre otras."
       />
       <Card
-        route="/CCUNFoL5ipY/"
+        route={`${currentPath}CCUNFoL5ipY`}
         img="https://i.ytimg.com/vi/CCUNFoL5ipY/maxresdefault.jpg"
         name="HuracanGaming"
         description="Trabajo para las redes de @Huracan_Gaming (MEX). Contenido en sus diferentes formatos para plataformas de redes sociales , incluyendo Instagram, Facebook, TikTok, entre otras."
       />
       <Card
-        route="/XioB3WoZ4i0/"
+        route={`${currentPath}XioB3WoZ4i0`}
         img="https://i.ytimg.com/vi/XioB3WoZ4i0/maxresdefault.jpg"
         name="HuracanGaming"
         description="Trabajo para las redes de @Huracan_Gaming (MEX). Contenido en sus diferentes formatos para plataformas de redes sociales , incluyendo Instagram, Facebook, TikTok, entre otras."
